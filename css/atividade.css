@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 100%;
+    height: 100vh;
+}
+
+span{
+    color: #f77200;
+}
+
+main{
+    margin-top: 130px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #000;
+    background-color: #fedc81;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links{
+    text-align: center;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    font-weight: bold;
+}
+
+.nav-conta img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.div-nav-icone{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+
+
+.menuLateral{
+    height: 100dvh;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    box-shadow: 0 0 5px;
+}
+
+.menuLateral a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Poppins';
+}
+
+.menuLateral a:hover{
+    color: #f2f2f2;
+    background-color: #f77200;
+    border: 1px solid #f77200;
+}
+
+.menu-geral{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-icone{
+    display: flex;
+    box-shadow: 0 0 5px black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icone:hover{
+    background-color: #fedc81;
+    transition: 0.5s;
+    box-shadow: 0 0 5px #000;
+}
+
+.nav-logo h1{
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.container-main-metas{
+    margin: 3rem;
+}
+
+.container-geral-titulo{
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 4rem;
+}
+
+.cor{
+    color: #ffc523;
+}
+
+.container-geral-titulo p{
+    margin: 0;
+}
+
+.container-metas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-geral-imagem img{
+    width: 500px;
+}
+
+.container-geral-txt{
+    width: 500px;
+}
+
+.container-geral-txt p{
+    font-family: 'Poppins';
+}
+
+.definir-metas-titulo{
+    font-size: 18px;
+    margin: 1rem 0rem 0rem 6rem;
+}
+
+.geral-form{
+    margin: 2rem 0rem 0rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.geral-form label{
+    font-family: 'Poppins';
+}
+
+.btn{
+    margin: 0.5rem 5.2rem;
+}
+
+.btn button{
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fedc81;
+    border-radius: 10px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn button:hover{
+    transform: scale(1.1);
+}
+
+.container-main-atividades{
+    margin: 3rem;
+}
+
+.container-atividades{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.grafico-geral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    flex-direction: column;
+}
+
+.grafico-titulo{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.grafico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 60px 0px;
+    width: 600px;
+}
+
+.container-footer{
+    background-color: #fedc81;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px -10px 25px 0px rgba(0,0,0,0.29);
+}
+
+.container-footer p{
+    font-size: 14px;
+}
+
+.container-footer ul > li{
+    font-size: 12px;
+}
+
+address{
+    font-size: 12px;
+    margin: 0 !important;
+}
+
+.footer-logo h2{
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1000; 
+    box-shadow: 0 0 5px;
+}
+
+.modal-content {
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 100%;
+    text-align: justify;    
+}
+
+.modal-content h2{
+    margin-bottom: 50px;
+    text-align: center;
+    color: #4CAF50;
+}
+
+.close {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+.modal.open {
+    right: 0; 
+}
+
+form {
+    width: 300px;
+    margin: 20px 0px 0px 70px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.btn-metas button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 175px;
+}
+
+.btn-metas button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.btn-metas button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
